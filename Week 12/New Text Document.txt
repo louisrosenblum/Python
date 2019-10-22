@@ -1,0 +1,37 @@
+1 1 1 1 1 = 5
+2 2 2 2 2 = 10
+3 3 3 3 3 = 15
+4 4 4 4 4 = 20
+5 5 5 5 5 = 25
+6 6 6 6 6 = 30
+
+1 2 3 4 5 = 15
+
+2 3 4 5 6 = 20
+
+(rolls[1] != rolls[2]) and (rolls[1] != rolls[3]) and (rolls[1] != rolls[4])
+(rolls[2] != rolls[3]) and (rolls[2] != rolls[4])
+(rolls[3] != rolls[4])
+
+1 1 1 2 2 = 7
+1 1 1 3 3 = 9
+1 1 1 4 4 = 11
+1 1 1 5 5 = 13
+1 1 1 6 6 = 15
+
+2 2 2 1 1 = 8
+2 2 2 3 3 = 12
+2 2 2 4 4 = 14
+2 2 2 5 5 = 16
+2 2 2 6 6 = 18
+
+3 3 3 1 1 = 11
+3 3 3 2 2 = 13
+3 3 3 4 4 = 17
+3 3 3 5 5 = 19
+3 3 3 6 6 = 21
+
+and (rolls[1] == rolls[0] or rolls[1] == rolls[2] or rolls[1] == rolls[3] or rolls[1] == rolls[4])
+and (rolls[2] == rolls[0] or rolls[2] == rolls[1] or rolls[2] == rolls[3] or rolls[2] == rolls[4])
+and (rolls[3] == rolls[0] or rolls[3] == rolls[1] or rolls[3] == rolls[2] or rolls[3] == rolls[4]) and (rolls[4] == rolls[0] or rolls[4] == rolls[1] or rolls[4] == rolls[2] or rolls[4] == rolls[3])
+and (rolls[4] == rolls[0] or rolls[4] == rolls[1] or rolls[4] == rolls[2] or rolls[4] == rolls[3])

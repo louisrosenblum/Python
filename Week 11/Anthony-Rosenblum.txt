@@ -1,0 +1,40 @@
+1. Does the solution produce the correct output? Be specific.
+
+No. The program includes the following mistakes:
+Program prints "--> visit the EMPower Student Center in Roberts 313" before "because you are having troubles with your major:" for an Engineering Major
+Program prints "--> visit the Physics Learning Center in Barnard Hall 230" before "because you are having troubles with your major:" for a Physics Major
+Program prints both "--> visit the CS Student Success Center in Barnard Hall 259" and "--> visit a CS professional advisor in Barnard Hall 357" before "because you are having troubles with your major:" for a CS Major
+
+
+
+2. Identify two ways in which comments can be used more effectively. Be specific.
+
+a. Comments on each subclass could indicate what changes are made from the Generic Major class.
+
+b. A comment could be left to explain that the function "process()" processes a student first as if they have no troubles and then again as if they have troubles in both their major and in math.
+
+
+
+
+2 points - Identify two ways in which the Python code can be made more concise. Be specific. (1 point each)
+
+a. Make computer engineering and computer science majors a subclass of the COE majors, rather than of a subclass of the higher level Generic Major.
+
+b. Using the paramaters "first" and "last" instead of "firstName" and "lastName". 
+
+
+
+2 points - Other than by adding comments, identify two ways in which the Python code can be made more understandable. Be specific. (1 point each)
+
+a. Use "troubles" or "trouble" as a parameter for set_major_troubles and set_math_troubles rather than "x".
+
+b. Use understandable boolean statements such as "if major student.get_math_troubles() == False and student.get_major_troubles() == False" rather than "if not student.get_math_troubles() and not student.get_major_troubles():"  
+
+
+
+
+2 points - What are two unique strengths of the solution? Explain and be specific. (1 point each)
+
+a. The program ties everything into one function "main()". Because of this, the program can be repeated more easily and adapted for other scenarios.
+
+b. The solution utilizes object oriented programming so that it can be easily adapted if more attributes of the students need to be analyzed or if advice needs to change in the future.
